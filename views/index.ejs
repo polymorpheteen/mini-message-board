@@ -16,14 +16,15 @@
                 <p>
                     <%= messages[i].text %>
                 </p>
-                <p>
+                <small>
                     <%= messages[i].added %>
-                </p>
+                </small>
+                <a href="/message/<%= i %>">Open</a>
             </li>
             <% } %>
     </ul>
 
-    <p><a href="/new">Add a New Message</a></p>
+    <p><a href="/new"><button>a New Message</button></a></p>
 </body>
 
 </html>
